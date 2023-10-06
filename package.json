@@ -1,0 +1,14 @@
+{
+  "name": "web-front-end-development-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/smile1015/web-front-end-development-study.git",
+  "author": "DESKTOP-VIH0SDG\\liuxingzhang <liuxingzhang.network@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vite"
+  },
+  "devDependencies": {
+    "vite": "^4.4.11"
+  }
+}

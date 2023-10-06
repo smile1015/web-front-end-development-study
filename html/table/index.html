@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- caption 标题标签 -->
+    <!-- tr table row 表格行标签 -->
+    <!-- th table header cell 表头标签
+         td table data cell 单元格标签
+    -->
+    <!-- cellpadding 单元格内边距
+         cellspacing 单元格间距
+     -->
+    <!-- 
+    colspan 要合并的列数
+    rowspan 要合并的行数
+    -->
+
+    <!-- 表格对齐的方式 -->
+    <!-- align="left|center|right" 更改对齐方式 -->
+
+    <!-- 
+        thead: 表格页面标签 table head 
+        tfoot: 表格页尾标签 table foot
+        tbody: 表格的主体标签 table body
+     -->
+
+     <!-- 表格加载顺序: thead -> tfoot -> tbody -->
+
+    <table border="1" cellpadding="10" cellspacing="10">
+        <caption>班级学习联络表</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>电话号码</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>13800000000</td>
+                <td>班长</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>李四</td>
+                <td>13800000001</td>
+                <td>副班长</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>王二</td>
+                <td>13800000002</td>
+                <td>生活委员</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>麻子</td>
+                <td>13800000003</td>
+                <td>三好学生</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" align="center">共4位同学</td>
+            </tr>
+        </tfoot>
+    </table>    
+</body>
+</html>

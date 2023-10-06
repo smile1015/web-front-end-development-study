@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 块级元素 block element -->
+    <form method="get" action="">
+         <!-- form 内联块元素 inline-block element -->
+        <label for="username">用户名</label>
+        <input type="text" name="username" id="username">
+        <hr />
+
+        <!-- readonly和disable的主要区别是: disable的输入框不会提交数据 -->
+        <label for="username2">用户名2</label>
+        <input type="text" name="username2" id="username2" readonly>
+        <label for="username3">用户名3</label>
+        <input type="text" name="username3" id="username3" disabled>
+        <hr />
+
+        <!-- 单选框 -->
+        <div>姓名: </div>
+        <label>
+            <span>男</span>
+            <input type="radio" name="gender" value="man" checked>
+        </label>
+   
+        <label>
+            <span>女</span>
+            <input type="radio" name="gender" value="woman" >
+        </label>
+        <hr />
+
+        <!-- 多选框 -->
+        <div>兴趣爱好: </div>
+        <label>
+            <span>睡觉</span>
+            <input type="checkbox" value="sleep" name="hobby">
+        </label>
+        <label>
+            <span>吃饭</span>
+            <input type="checkbox" value="eat"  name="hobby">
+        </label>
+        <hr>
+
+        <!-- 选择器 -->
+        <!-- 如果写了value那么选择的是value的值, 如果没写value 那么默认值会是标签中间的文本 -->
+        <div>请选择你的语言: </div>
+        <select name="lang" id="lang">
+            <option value="">请选择</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option></option>
+        </select>
+        <hr>
+
+        <!-- 
+            16号的字体(英文字母)宽度是8px
+            宽度计算公式 8px * cols + 17px
+            这个标签内部是不可以换行或者空格, 如果换行或者空格光标会出现在表单中间, 原因在于textare这个标签比较特殊, 它没有value属性, 它的内容是需要写在标签之间的, 所有如果换行了或者空格, 会被浏览器识别到;
+            但是在js中可以通过.value属性和innerHTML来获取到标签内部的内容, 但是无法通过innerText获取
+         -->
+
+         <textarea name="" id="text" cols="30" rows="10" >2131</textarea>
+
+
+         <!-- fieldset legend 标签 用来分组, 都是块级元素 -->
+         <fieldset>
+             <legend>用户登录</legend>
+             <p>
+                <label for="username">用户名</label>
+                <input type="text" id="username" placeholder="用户名">
+             </p>
+             <p>
+                <label for="username">密码</label>
+                <input type="password" id="username" placeholder="密码">
+             </p>
+
+             <p>
+                <input type="submit">
+             </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>用户注册</legend>
+            <p>
+               <label for="username">用户名</label>
+               <input type="text" id="username" placeholder="用户名">
+
+               
+    
+               <input type="submit">
+            </p>
+            <p>
+                <label for="username">密码</label>
+                 <input type="password" id="password" placeholder="密码">
+            </p>
+            <p>
+                <label for="username">确认密码</label>
+                 <input type="password" id="confirmPassword" placeholder="确认密码">
+            </p>
+            <p> <input type="submit"></p>
+        </fieldset>
+
+    </form>
+
+    <script>
+        const oText = document.getElementById('text');
+        console.log(oText.value)
+    </script>
+</body>
+</html>

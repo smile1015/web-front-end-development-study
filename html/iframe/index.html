@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 内联框架 -->
+    <!-- 内联块元素 -->
+    <!-- 缺点: 1. 对搜索引擎不友好 2. 滚动条体系混乱 3. 框架内数据加载无法监控 -->
+    <!-- scrolling="no|yes|auto"  默认是yes-->
+
+    <div>
+        <p>
+            <a href="http://www.taobao.com" target="mainFrame">淘宝</a>
+            <a href="http://www.jd.com" target="mainFrame">京东</a>
+        </p>
+        <iframe 
+            style="background: green; width: 100%; height: 600px;" 
+            src="http://www.baidu.com" 
+            frameborder="1" 
+            name="mainFrame"
+            scrolling="no"
+        >
+        </iframe>
+
+    </div>
+</body>
+
+</html>
